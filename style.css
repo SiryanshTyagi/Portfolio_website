@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#wrapper{
+    
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #000;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+}
+
+.container{
+    
+    height:32.2rem;
+    margin-top: 10px;
+  
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:20px;
+    background-color:#F6E6CB;
+    animation: navu 3s ease-in-out 0s 1 normal;
+}
+@keyframes navu{
+    0%{
+        transform:translateY(-30rem);
+    }
+    60%{
+        transform:translateY(1rem);
+    }
+    100%{
+        transform:translateY(0rem);
+    }
+}
+.navcontent a:hover{
+    text-shadow: 0 0 10px black;
+    scale:1.1;
+    cursor: pointer;
+
+}
+
+.navcontent{
+    width:20rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.heading{
+    margin-left: 20px;
+}
+.navcontent a{
+    text-decoration: none;
+    color:black;
+    font-size:1.3rem;
+    font-weight: 500;
+    margin-right: 20px;
+    transition:all 0.2s ease 0s;
+}
+
+.main{
+    margin: 10px;
+    height:28rem;
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+width:46rem;
+
+}
+.upper{
+    height:17rem;
+    display:flex;
+    justify-content: space-between;
+
+}
+.bio{
+    padding: 10px;
+    width:30rem;
+    border:1px solid rgb(247, 245, 245);
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: #efdcbb;
+    animation: double 1.4s ease-out 0s 1 normal ;
+    position: relative;
+}
+@keyframes double{
+    from{
+          right:30rem;
+    }
+    to{
+        right:0rem;
+    }
+}
+.first{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.first i{
+    opacity: 0.25;
+    margin: 10px;
+    font-size: 4rem;
+}
+.second b{
+    font-size:3rem;
+}
+.second{
+    font-size:2.4rem;
+}
+.captions{
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    animation: alpha 1.4s linear 0s 1 normal ;
+}
+@keyframes alpha{
+    0%{
+        top:15rem;
+        transform: rotateX(-360deg);
+    }
+  
+    100%{
+        top:0rem;
+        transform: rotateX(0deg);
+    }
+}
+
+.captions h1{
+    transform: translateX(-8rem);
+    font-weight: 800;
+    padding-top: 0.7rem;
+    padding-left: 1.5rem;
+    transition:all 0.2s ease 0s
+}
+.captions h1:hover{
+    scale:1.1;
+    text-shadow:0 0 10px black;
+    cursor:pointer;
+}
+.face{
+    border-radius: 20px;
+    
+    background-color: #273945;
+
+    width:16rem;
+    border:1px solid rgb(247, 245, 245);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+}
+.lower{
+    height:10.9rem;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.captions{
+    width:24rem;
+    border:1px solid rgb(247, 245, 245);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: #efdcbb;
+
+}
+.bout{
+    width:22rem;
+    border:1px solid rgb(247, 245, 245);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: #273945; 
+    animation: boom 1.4s ease-out 0s 1 normal;
+}
+@keyframes boom{
+    0%{
+        transform:translateY(40rem);
+    }
+    
+    
+    100%{
+        transform:translateY(0rem);
+    }
+
+}
+.face{
+    animation: over 1.4s ease-out 0s 1 normal;
+    position: relative;
+}
+@keyframes over{
+   from{
+    bottom:30rem;
+   }
+   to{
+    bottom:0;
+   }
+}
+.up{
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.up i{
+    font-size:2.5rem;
+    color:rgba(255, 255, 255, 0.534);
+    transform: translateX(1rem);
+    transition:all 0.2s ease 0s
+}
+.up i:hover{
+    color:black;
+    text-shadow: 0 0 10px black;
+}
+.two a{
+    text-decoration: none;
+    text-align: left;
+    color:rgba(241, 228, 206, 0.636);
+}
+.two h1{
+    transition:all 0.2s ease 0s;   
+    position: relative;
+
+}
+.two h1:hover{
+    text-shadow: 0 0 10px black;
+    scale:1.1;
+    padding-left: 0.5rem;
+
+    cursor: pointer;
+}
+.two {
+    width:20rem;
+   
+    
+}
+
+.up p{
+    font-size:1.3rem;
+    font-weight: 500;
+    color:grey;
+    transition: all 0.2s ease 0s;
+    position: relative;
+    right:0.5rem;
+}
+.up p:hover{
+    scale:1.1;
+    text-shadow: 0 0 10px black;
+}
+.side{
+    width:22.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+.top{
+    height:23rem;
+    border:1px solid rgb(247, 245, 245);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: #efdcbb;
+    padding: 10px;
+
+}
+#projects{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 900;
+    
+
+}
+#projects h1{
+    transition:all 0.2s ease 0s;
+
+}
+#projects h1:hover{
+    text-shadow: 0 0 10px black;
+    scale:1.1;
+    cursor: pointer;
+}
+
+.list{
+    transform: translateX(-2rem);
+    font-size: x-large;
+}
+.list ul li{
+    list-style-type: disc;
+    margin: 5px;
+    transition:all 0.2s ease 0s;
+
+}
+.list ul li:hover{
+    text-shadow: 0 0 10px black;
+    scale:1.1;
+    cursor: pointer;
+}
+.bottom{
+    height:4.9rem;
+    border:1px solid rgb(247, 245, 245);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: #efdcbb;
+   
+    animation: scale 1.4s linear 0s 1 normal ;
+
+}
+@keyframes scale{
+ from{
+    opacity: 0;
+ }
+ to{
+    opacity: 1;
+ }
+
+}
+
+.bottom i{
+    font-size:2.2rem;
+    
+}
+
+.face img{
+    max-height: 100%;
+    max-width:100%;
+    border-radius: 20px; 
+    object-fit:cover;
+    display: block;
+    transform: translateX(1.2rem);
+}
+
+#insta{
+    animation: instant 1.7s cubic-bezier(0.4,0.4,0.4,0.2) 0s 1 normal ;
+    position: relative;
+    transition:all 0.2s ease 0s;
+}
+#facebook{
+    animation: fact 1.8s cubic-bezier(0.4,0.4,0.4,0.2) 0s 1 normal ;
+    position: relative;
+    transition:all 0.2s ease 0s;
+}
+#linked{
+    animation: lock 1.9s cubic-bezier(0.4,0.4,0.4,0.2) 0s 1 normal ;
+    position: relative;
+    transition:all 0.2s ease 0s;
+}
+#twit{
+    animation: twining 2s cubic-bezier(0.4,0.4,0.4,0.2) 0s 1 normal ;
+    position: relative;
+    transition:all 0.2s ease 0s;
+}
+#insta:hover, #facebook:hover, #linked:hover, #twit:hover{
+    text-shadow: 0 0 10px #f6ba53d0;
+    scale:1.1;
+    cursor: pointer;
+}
+@keyframes instant{
+    0%{
+        bottom:30rem;
+    }
+    60%{
+        bottom:-1.5rem;
+    }
+    100%{
+        bottom: 0;  
+    }
+}
+@keyframes fact{
+    0%{
+        bottom:30rem;
+    }
+    60%{
+        bottom:-1.5rem;
+    }
+    100%{
+        bottom: 0; 
+    }
+}
+@keyframes lock{
+    0%{
+        bottom:30rem;
+
+    }
+    60%{
+        bottom:-1.5rem;
+    }
+   
+    100%{
+        bottom: 0;
+       
+    }
+
+}
+@keyframes twining{
+    0%{
+        bottom:30rem;
+
+    }
+    60%{
+        bottom:-1.5rem;
+    }
+   
+    100%{
+        bottom: 0;
+       
+    }
+
+}
+.top{
+    animation: oval 3s ease 0s 1 normal ;
+}  
+@keyframes oval{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} 
+#projects{
+    animation: bang1 3s ease-in 0s 1 normal ;
+    position: relative;
+}
+@keyframes bang1{
+    from{
+        left:60rem;
+        opacity: 0;
+    }
+    to{
+        left:0rem;
+        opacity: 1;
+    }
+}
+#A{
+    animation: bang2 3.5s ease-in 0s 1 normal ;
+    position: relative;
+}
+#B{
+    animation: bang3 3.8s ease-in 0s 1 normal ;
+    position: relative;
+}
+#C{
+    animation: bang4 4.1s ease-in 0s 1 normal ;
+    position: relative;
+}
+#D{
+    animation: bang5 4.4s ease-in 0s 1 normal ;
+    position: relative;
+}
+#E{
+    animation: bang6 4.7s ease-in 0s 1 normal ;
+    position: relative;
+}
+#F{
+    animation: bang7 5s ease-in 0s 1 normal ;
+    position: relative;
+}
+@keyframes bang2{
+    0%{
+        left:60rem;
+        opacity: 0;
+    }
+    80%{
+        left:40rem;
+
+    }
+    100%{
+        left:0rem;
+        opacity: 1;
+    }
+}
+@keyframes bang3{
+    0%{
+        left:60rem;
+        opacity: 0;
+    }
+    80%{
+        left:40rem;
+
+    }
+    100%{
+        left:0rem;
+        opacity: 1;
+    }
+}
+@keyframes bang4{
+    0%{
+        left:60rem;
+        opacity: 0;
+    }
+    80%{
+        left:40rem;
+
+    }
+    100%{
+        left:0rem;
+        opacity: 1;
+    }
+}
+@keyframes bang5{
+    0%{
+        left:60rem;
+        opacity: 0;
+    }
+    80%{
+        left:40rem;
+
+    }
+    100%{
+        left:0rem;
+        opacity: 1;
+    }
+}
+@keyframes bang6{
+    0%{
+        left:60rem;
+        opacity: 0;
+    }
+    80%{
+        left:40rem;
+
+    }
+    100%{
+        left:0rem;
+        opacity: 1;
+    }
+}
+@keyframes bang7{
+    0%{
+        left:60rem;
+        opacity: 0;
+    }
+    80%{
+        left:40rem;
+
+    }
+    100%{
+        left:0rem;
+        opacity: 1;
+    }
+}
+
+
+
+#fan{
+    animation: spin 2.5s ease-in-out 0s 1 normal;
+    position: relative;
+}
+@keyframes spin{
+    from{
+        right:30rem;
+        transform:rotateZ(-1800deg)
+    }
+    to{
+        right:0rem;
+        transform:rotateZ(0deg);
+    }
+}
